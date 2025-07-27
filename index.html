@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaaniVerse - Your AI Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to a nice font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="header">
+            <h2>VaaniVerse AI</h2>
+            <span>Your Multilingual Voice Companion</span>
+        </div>
+        <div id="chat-window" class="chat-window">
+            <!-- Chat messages will be dynamically inserted here -->
+            <div class="message assistant">
+                <p>Hello! I'm VaaniVerse. To start, please tell me which language you'd like to talk in. (e.g., English, हिंदी, Español)</p>
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="chat-input" placeholder="Type your message or use the mic..." autofocus>
+            <button id="record-btn" title="Record Voice Command">🎤</button>
+            <button id="send-btn" title="Send Message">➤</button>
+        </div>
+    </div>
+
+    <!-- Hidden audio element for playing back TTS responses -->
+    <audio id="tts-audio" style="display: none;"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

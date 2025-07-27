@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    height: 90vh;
+    max-height: 800px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(90deg, #8e2de2, #4a00e0);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.header h2 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.header span {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+.chat-window {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Custom scrollbar for a modern look */
+.chat-window::-webkit-scrollbar {
+    width: 8px;
+}
+.chat-window::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+.chat-window::-webkit-scrollbar-thumb {
+    background-color: #4a00e0;
+    border-radius: 10px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 18px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.message p {
+    margin: 0;
+}
+
+.assistant {
+    background-color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.user {
+    background: linear-gradient(90deg, #8e2de2, #4a00e0);
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.thinking {
+    background-color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.input-area {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #333;
+    background-color: #252525;
+}
+
+#chat-input {
+    flex-grow: 1;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: #333;
+    color: #e0e0e0;
+    font-size: 1em;
+    outline: none;
+}
+
+#send-btn, #record-btn {
+    border: none;
+    background-color: #4a00e0;
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#record-btn.recording {
+    background-color: #e04a4a;
+}
+
+#send-btn:hover, #record-btn:hover {
+    background-color: #6a1b9a;
+}

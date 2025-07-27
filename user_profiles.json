@@ -1,0 +1,38 @@
+{
+  "streamlit_chat_session": {
+    "language_preference": "en",
+    "name": "User",
+    "mood": "neutral",
+    "location": "unknown",
+    "bookmarked_spots": [],
+    "welfare_progress": {},
+    "mentor_interactions": 0
+  },
+  "whatsapp:+919109484754": {
+    "language_preference": "en",
+    "name": "User",
+    "mood": "neutral",
+    "location": "unknown",
+    "bookmarked_spots": [],
+    "welfare_progress": {},
+    "mentor_interactions": 0
+  },
+  "whatsapp:+917725014797": {
+    "language_preference": "en",
+    "name": "User",
+    "mood": "neutral",
+    "location": "unknown",
+    "bookmarked_spots": [],
+    "welfare_progress": {},
+    "mentor_interactions": 0
+  },
+  "whatsapp:+918982484754": {
+    "language_preference": "en",
+    "name": "User",
+    "mood": "neutral",
+    "location": "unknown",
+    "bookmarked_spots": [],
+    "welfare_progress": {},
+    "mentor_interactions": 0
+  }
+}
